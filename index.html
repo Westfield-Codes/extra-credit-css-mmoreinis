@@ -5,6 +5,7 @@
     <title>Nametag Creator</title>
     <style>
      div.nametag {
+      margin:auto;
       width: 600px;
       height:440px;
       border: solid grey 1px;
@@ -23,6 +24,7 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
      }
+     
      h2,h3 {
       color:#ff37d4;
       font-size:60px;
@@ -30,15 +32,13 @@
       margin-top:5px;
      }
 
-     .line {
-      background-color: #ff37d4;
-      position: relative;
-      margin-top:130px;
-      height: 7px;
+     #name {
+      padding-bottom:20px;
+      border-bottom: 7px solid #ff37d4;
      }
 
      img {
-      padding:70px;]
+      padding:70px;
 
      }
     </style>
@@ -47,14 +47,12 @@
   <body onload="setup()">
     
     <div class="nametag">
-        <h1>HELLO</h1> 
-        <h2>My Name Is</h2>
-        <div id="name"></div>
-        <div class="line"></div>
+        <h1 id="title">HELLO</h1> 
+        <h2 id="subtitle">My Name Is</h2>
+        <div id="name">
+          <input id="get-name" type="text">
+        </div>
     </div>
- 
-  
-    <img src="nametag.jpg" width="800px">
   
   <script src="script.js"></script>
   </body>
