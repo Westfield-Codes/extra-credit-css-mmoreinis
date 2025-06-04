@@ -23,4 +23,9 @@ function howManyGames(){
     title.innerHTML = "RPS";
     let subtitle = document.getElementById("subtitle");
     subtitle.innerHTML = "How many rounds?";
+    let rounds = document.createElement("input");
+    rounds.id = "rounds";
+    rounds.value = "Enter an odd number here.";
+    let nameBox = document.getElementById("name");
+    nameBox.appendChild(rounds);
 }
